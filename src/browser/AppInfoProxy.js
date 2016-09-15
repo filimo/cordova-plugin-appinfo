@@ -26,12 +26,12 @@ module.exports = {
             success('3.0.0-browser');
         }, 0);
     },
-    getVersion: function (success, error) {
+    getAppInfo: function (success, error) {
         setTimeout(function () {
             success('getAppInfo');
         }, 0);
     },
-    getVersion: function (success, error) {
+    getIdentifier: function (success, error) {
         setTimeout(function () {
             success('getIdentifier');
         }, 0);

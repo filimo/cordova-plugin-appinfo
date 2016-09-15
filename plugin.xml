@@ -27,7 +27,7 @@
       </feature>
     </config-file>
 
-    <js-module src="src/browser/AppInfo.js" name="AppInfo">
+    <js-module src="src/browser/AppInfoProxy.js" name="AppInfoProxy">
       <runs />
     </js-module>
 
