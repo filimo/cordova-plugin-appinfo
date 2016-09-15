@@ -18,6 +18,21 @@
     <merges target="navigator.appInfo" />
   </js-module>
 
+  <!-- browser -->
+  <platform name="browser">
+
+    <config-file target="config.xml" parent="/*">
+      <feature name="AppInfo">
+        <param name="browser-package" value="org.scriptotek.appinfo.AppInfo"/>
+      </feature>
+    </config-file>
+
+    <js-module src="src/browser/AppInfo.js" name="AppInfo">
+      <runs />
+    </js-module>
+
+  </platform>
+
   <!-- android -->
   <platform name="android">
 
