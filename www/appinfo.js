@@ -20,7 +20,11 @@ function appInfo() {
             me.build = info.build || 'unknown';
             channel.onAppInfoReady.fire();
         },function(e) {
-            utils.alert("[ERROR] Error initializing Cordova: " + e);
+            if(utils) {
+                utils.alert("[ERROR] Error initializing Cordova: " + e);
+            }else{
+                alert("[ERROR] Error initializing Cordova: " + e);
+            }
         });
     });
 }
